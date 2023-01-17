@@ -13,8 +13,8 @@ Controle de Custos
 
 ### Aplicações
 
-[x] Tratamento de Dados do SIGEF
-[x] Controle de Processos - Financeiro
-[x] Atualização dos Saldos Orçamentários
-[ ] Backend Painel de Contratos
-[ ] Controle de Processos - Custos
+- [x] Tratamento de Dados do SIGEF
+- [x] Controle de Processos - Financeiro
+- [x] Atualização dos Saldos Orçamentários
+- [ ] Backend Painel de Contratos
+- [ ] Controle de Processos - Custos
