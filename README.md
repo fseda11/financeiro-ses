@@ -11,6 +11,10 @@ Controle de Custos
 
 1. Edyr Pereira
 
+Assessoria de Finanças
+
+1. Felipe Zeda
+
 ### Aplicações
 
 - [x] Tratamento de Dados do SIGEF
