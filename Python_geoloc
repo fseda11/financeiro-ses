@@ -1,0 +1,29 @@
+from geopy.geocoders import Nominatim
+
+def obter_coordenadas(cidade):
+    geolocator = Nominatim(user_agent="my_app")
+    location = geolocator.geocode(cidade + ", Maranhão, Brasil")
+
+    if location:
+        latitude = location.latitude
+        longitude = location.longitude
+        return cidade, longitude, latitude
+    else:
+        return cidade, None, None
+
+# Lista de cidades do Maranhão
+cidades_maranhao = ["São Luís", "Imperatriz", "Timon", "Codó", "Caxias"]
+
+# Obter coordenadas para cada cidade
+coordenadas_cidades = []
+
+for cidade in cidades_maranhao:
+    coordenadas = obter_coordenadas(cidade)
+
+    if coordenadas:
+        coordenadas_cidades.append(coordenadas)
+
+# Imprimir lista de cidades, longitude e latitude
+print("Cidade,Longitude,Latitude")
+for cidade, longitude, latitude in coordenadas_cidades:
+    print(f"{cidade},{longitude},{latitude}")
